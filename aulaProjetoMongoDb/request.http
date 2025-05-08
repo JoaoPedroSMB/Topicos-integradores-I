@@ -1,0 +1,25 @@
+@host = http://localhost:3000
+
+POST {{host}}/api/produtos
+Content-Type: application/json
+{
+    "nome":"gabingola",
+    "preco":"3R$/h",
+    "quantidade":200
+}
+
+###listar
+GET {{host}}/api/produtos
+
+###listarPorId
+GET {{host}}/api/produtos/______
+
+###atualizar
+PUT{{{host}}}/api/produtos/______
+Content-Type: application/json
+{
+    "preco" : 6000.0
+}
+
+###deletar
+DELETE {{{host}}}/api/produtos/______
